@@ -1,9 +1,9 @@
 :root {
-    --bg: #e3f1e3;
+    --bg: #ecf3ec;
     --text: #222222;
-    --highlight: #217035;
-    --navlink-border: #195829;
-    --grid-border: #b6c4b6;
+    --highlight: #278844;
+    --navlink-border: #23753c;
+    --grid-border: #b0bbb0;
 }
 
 * {
@@ -29,13 +29,7 @@ nav {
 
 .content {
     margin: 0 auto 24px;
-    width: 75%;
-}
-
-.button {
-    height: 30px;
-    width: 100px;
-    background-color: var(--highlight);
+    width: 70%;
 }
 
 img {
@@ -43,13 +37,15 @@ img {
     height: auto;
 }
 
+/* Nav */
+
 .navlink {
-    padding: 10px;
-    width: 120px;
+    padding: 10px 30px;
     background-color: var(--highlight);
     color: var(--bg);
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .navlink:hover {
@@ -61,6 +57,8 @@ img {
     background-color: var(--bg);
     color: var(--highlight);
 }
+
+/* Links */
 
 .links {
     display: flex;
@@ -85,6 +83,8 @@ img {
     margin-right: 8px;
     font-size: 24px;
 }
+
+/* Grid */
 
 .grid-container {
     display: grid;
@@ -123,6 +123,7 @@ img {
     .navlink {
         border-bottom: 2px solid var(--navlink-border);
         width: 100%;
+        transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
     }
 
     .navlink:hover {
