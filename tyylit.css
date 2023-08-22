@@ -27,6 +27,10 @@ nav {
     background-color: var(--highlight);
 }
 
+.flex {
+    display: flex;
+}
+
 .content {
     margin: 0 auto 24px;
     width: 70%;
@@ -59,10 +63,6 @@ img {
 }
 
 /* Links */
-
-.links {
-    display: flex;
-}
 
 .link {
     padding: 6px 10px;
