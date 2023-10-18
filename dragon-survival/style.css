@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&display=swap');
+
+:root {
+    --grey-dark: #3e3546;
+    --grey: #7f708a;
+    --dark: #2e222f;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    background-color: var(--grey-dark);
+}
+
+#endgame-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url("gfx/wall.png");
+    color: rgb(231, 229, 229);
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(231, 229, 229);
+    display: none;
+}
+
+#endgame-gradient {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(7, 7, 7, 0.9), rgba(0, 0, 0, 0.2));
+}
+
+h1 {
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+p {
+    padding-bottom: 15px;
+    font-size: 20px;
+    cursor: default;
+}
+
+#restart-button {
+    background: linear-gradient(to top, rgb(169, 2, 2), rgb(119, 30, 30));
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#restart-button:hover {
+    background: linear-gradient(to top, rgb(144, 2, 2), rgb(86, 1, 1));
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0 1px 3px black;
+}
